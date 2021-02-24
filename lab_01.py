@@ -7,7 +7,7 @@ config_dict['language'] = 'ru'
 owm = OWM('b995cefbcf08a1a6c8426b835ffc5a1c',config_dict)
 mgr = owm.weather_manager()
 
-place = input("Input City, country?: ")
+place = input("Введите город\страну:  ")
 
 observation = mgr.weather_at_place(place)
 weather = observation.weather
