@@ -1,0 +1,26 @@
+instanse = "<classes.complex object at 0x7f1ef626a0a0>"
+type = "classes.complex"
+"object in bytes" = "fCQBq000000001t2V-nub8}^Ll#B;sZ*6dFWq6d6lqrFfE&"
+
+[class_attr.func]
+instanse = "<bound method simple.func of <class 'classes.complex'>>"
+name = "func"
+type = "method"
+"object in bytes" = "fCQD20RR910001elqie{LvLhdRC#b^lzo&aj0j<JXJc=5ZgiAO1B?%FZ*y;MY<XdFXJc=5ZgiAO0E`Z6cW-WNd0}#AV{dhCbd*Z~j0bLPZ)0I>bCgR1j0tmeVPk7^X?kUpO9G4qW^7?+bCgR%j09tEWMz~?2z&v20u%sK0F;adV{dMAbaRwWg_Mj1ZeeX@bCfBJ2zFs|ZeeX@bCiq(b7gF1l#Bskl#Bsll!ugz2xe()Wo}_@Wt5CSFKBOVWiM`Fb98BMZecG~ZfSO9a&u)bGGlLba&u)bNmEcSP<eD{Z*DJhWn*t{WM6DyVlQKCVRLh3b1rasl#B#!VQpoUj09$NZex^;3ub9@b98KJZe?z7luHzh25fF`bYWtYLjnK-l#B>wa%E+9VRCbnDU1kXWo&GAVRCbnDRqntMs;pubZKvHRC#b^lzo&aj0b0IZ(?C=bCi9QXccG{j0j|9W?^+~baRwWj0a<EZ*z5WWt2{g1Y~Jrbd-IRj0$UaWMyVyb!>EVlumVZE&"
+
+[class_attr.method]
+instanse = "<bound method complex.method of <class 'classes.complex'>>"
+name = "method"
+type = "method"
+
+[class_attr.func.func_param]
+args = [ "self", "a", "b",]
+kwonlyargs = []
+
+[class_attr.method.func_param]
+args = [ "self", "a",]
+kwonlyargs = []
+
+[class_attr.func.func_param.annotations]
+
+[class_attr.method.func_param.annotations]
