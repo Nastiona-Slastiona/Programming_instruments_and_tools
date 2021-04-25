@@ -1,0 +1,3 @@
+[console_scripts]
+custom_serialiser = console_app:main
+
