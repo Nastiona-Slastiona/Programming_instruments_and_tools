@@ -29,6 +29,6 @@ class_attr:
     instanse: <bound method complex.method of <class 'classes.complex'>>
     name: method
     type: method
-instanse: <classes.complex object at 0x7f1ef626ab80>
+instanse: <classes.complex object at 0x7f2e8c48bb80>
 object in bytes: fCQBq000000001t2V-nub8}^Ll#B;sZ*6dFWq6d6lqrFfE&
 type: classes.complex
