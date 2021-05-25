@@ -1,0 +1,15 @@
+{
+    "instanse": "<function hello at 0x7fa1ed3bf1f0>",
+    "name": "hello",
+    "type": "function",
+    "func_param": {
+        "args": [],
+        "varargs": null,
+        "varkw": null,
+        "defaults": null,
+        "kwonlyargs": [],
+        "kwonlydefaults": null,
+        "annotations": {}
+    },
+    "object in bytes": "fCQD20RR910001elqie{LvLhdRC#b^lzo&aj0j<JXJc=5ZgiAO0E`cCZ*y;MY<XdFXJc=5ZgiAO0E`Z6cW-WNd0}#AV{dhCbd*Z~j0bLPZ)0I>bCgQ}j0tmeVPk7^X?kUpO9G4qW^7?+bCgR%j09tEWMz~?40Hfw0fPYn0Av7D0F;adV{dMAbaRwWj0I?AY;13ohLns2ZeeX@bCiq)aB^vGbd-gZj0kpNa&BR5Wpk7%j0k3FY-Mg?ZDo{<Krd)-ZDlWRVRLk8Z*E~PRc>i^WpZ<6FEV3qb#ilMFG*8SFHm`OXm4&Wb7f<1Ze(9<VPY?HV{&P5bTKY)d6bL<ZeeX@lxPf$3ub9@b98KJZe?z7luHVX25fF`bYWtYLjnK+l#B>wa%E+9VRCbnDU1kXWo&GAVRCbnDRqntMs;pubZKvHRC#b^lzo&aj0b0IZ(?C=bCi9QXcTA+j0j|9W?^+~baRwWj0a<EZ*z5WWt2{g1Y~Jrbd-IRj0$UaWMyVyb!>EVlumVZE&"
+}

@@ -1,0 +1,51 @@
+object = "<my_toml.toml_my object at 0x7fe70227feb0>"
+type = "my_toml.toml_my"
+"object in bytes" = "fCQBq000000001t2W@#@bZ>2Jl#B;-Z*6Q}ZF!WFlqrFfE&"
+
+[class_attr.dump]
+object = "<bound method toml_my.dump of <my_toml.toml_my object at 0x7fe70227feb0>>"
+name = "dump"
+type = "method"
+"object in bytes" = "fCQC1000000001t2x4_<Y;<XEbCiq+XJvF@baZl*la!1HZFygGZ*6Rpj0bdYZERm{d6bisDS?!X1Y~t>aFm9WQj{("
+
+[class_attr.dumps]
+object = "<bound method toml_my.dumps of <my_toml.toml_my object at 0x7fe70227feb0>>"
+name = "dumps"
+type = "method"
+"object in bytes" = "fCQC2000000001t2x4_<Y;<XEbCiq+XJvF@baZl*la!1HZFygGZ*6Rpj0bdYZERm{d6bisDS?!X1!Q$?aC4M~lv0!~"
+
+[class_attr.load]
+object = "<bound method toml_my.load of <my_toml.toml_my object at 0x7fe70227feb0>>"
+name = "load"
+type = "method"
+"object in bytes" = "fCQC1000000001t2x4_<Y;<XEbCiq+XJvF@baZl*la!1HZFygGZ*6Rpj0bdYZERm{d6bisDS?!X1Z;0%WR!-KQj{("
+
+[class_attr.loads]
+object = "<bound method toml_my.loads of <my_toml.toml_my object at 0x7fe70227feb0>>"
+name = "loads"
+type = "method"
+"object in bytes" = "fCQC2000000001t2x4_<Y;<XEbCiq+XJvF@baZl*la!1HZFygGZ*6Rpj0bdYZERm{d6bisDS?!X1#E9&WOI~;lv0!~"
+
+[class_attr.dump.func_param]
+args = [ "self", "obj", "fp",]
+kwonlyargs = []
+
+[class_attr.dumps.func_param]
+args = [ "self", "obj",]
+kwonlyargs = []
+
+[class_attr.load.func_param]
+args = [ "self", "fp",]
+kwonlyargs = []
+
+[class_attr.loads.func_param]
+args = [ "self", "s",]
+kwonlyargs = []
+
+[class_attr.dump.func_param.annotations]
+
+[class_attr.dumps.func_param.annotations]
+
+[class_attr.load.func_param.annotations]
+
+[class_attr.loads.func_param.annotations]
