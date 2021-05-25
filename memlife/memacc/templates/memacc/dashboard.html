@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h1>Dashboard</h1>
+    {% with total_mems_created=request.user.mems_created.count %}
+    <p>Welcome to your dashboard. You have bookmarked {{ total_mems_created }} mem{{ total_mems_created|pluralize }}.</p>
+    {% endwith %}
+    
+    <p>Drag the following button to your bookmarks toolbar to bookmark mems from other websites → 
+      <script type="text/javascript" src="jquery.js"></script>
+      <a href="{% url 'create'%}">Bookmark it</a>
+  </p>
+    
+    <p>You can also <a href="{% url 'edit' %}">edit your profile</a> or 
+        <a href="{% url 'password_change' %}">change your password</a>.
+    </p>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner"style="height: 600px; width: 600px;">
+          <div class="carousel-item active">
+            <img src="https://i.redd.it/hi2lr8ef5uz61.jpg" class="d-block w-100" alt="mem1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.redd.it/q5sdc0htmuz61.jpg" class="d-block w-100" alt="mem2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i.redd.it/1uyn2ks6gvz61.jpg" class="d-block w-100" alt="mem3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+{% endblock %}
