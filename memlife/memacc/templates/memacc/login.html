@@ -11,6 +11,7 @@
       <p>Please, use the following form to log-in. If you don't have an account <a href="{% url 'register' %}">register here</a></p>
       <form action="." method="post">
         <p><a href="{% url 'password_reset' %}">Forgotten your password?</a></p>
+
           {{ form.as_p }}
           {% csrf_token %}
           <div class="checkbox mb-3">
@@ -27,7 +28,7 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner"style="height: 600px; width: 600px;">
+      <div class="carousel-inner"style="height: 600px; width: 600px; border-radius: 10px;">
         <div class="carousel-item active">
           <img src="https://www.cdn.memify.ru/media/kvbjghOhBSLp_CAZmj_VdA/20210221/xEjGCDlCcqs.jpg" class="d-block w-100" alt="mem1">
         </div>

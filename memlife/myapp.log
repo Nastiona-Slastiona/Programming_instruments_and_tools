@@ -1,0 +1,87 @@
+INFO: 2021-05-26 18:31:52,431  dev  INFO: Nastiona Trying to enter
+INFO: 2021-05-26 18:31:52,579  dev  INFO: Nastiona have entered into MeMes
+INFO: 2021-05-26 18:31:52,608  django.request  WARNING: Not Found: /memacc/login/jquery.js
+INFO: 2021-05-26 18:31:55,059  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:31:55,107  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:32:06,449  django.request  ERROR: Internal Server Error: /memacc/edit/
+Traceback (most recent call last):
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py", line 35, in edit
+    logger.info(f"{user_form.cleaned_data['username']}'s profile was edited")
+KeyError: 'username'
+INFO: 2021-05-26 18:33:23,224  django.utils.autoreload  INFO: /home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py changed, reloading.
+INFO: 2021-05-26 18:34:05,941  django.request  ERROR: Internal Server Error: /memacc/edit/
+Traceback (most recent call last):
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memlifeenv/lib/python3.8/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py", line 35, in edit
+    logger.info(f"{profile_form.cleaned_data['first_name']}'s profile was edited")
+KeyError: 'first_name'
+INFO: 2021-05-26 18:34:30,757  django.utils.autoreload  INFO: /home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py changed, reloading.
+INFO: 2021-05-26 18:34:35,628  dev  INFO: Nastiona's profile was edited
+INFO: 2021-05-26 18:34:51,139  django.utils.autoreload  INFO: /home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py changed, reloading.
+INFO: 2021-05-26 18:34:54,815  django.utils.autoreload  INFO: /home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py changed, reloading.
+INFO: 2021-05-26 18:35:06,758  django.utils.autoreload  INFO: /home/nastiona/Universe/2course/ISP/Python/third_lab/Mem/memlife/memacc/views.py changed, reloading.
+INFO: 2021-05-26 18:53:04,460  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:53:04,500  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:54:06,630  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:54:06,671  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:54:22,843  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:54:22,883  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:55:22,336  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:55:22,381  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:57:19,110  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:57:19,144  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:57:37,253  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:57:37,301  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:58:51,289  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:58:51,326  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:59:06,764  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:59:06,797  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 18:59:22,869  dev  INFO: Main page was invited
+INFO: 2021-05-26 18:59:22,912  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:03:19,383  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:03:19,423  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:07:01,864  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:07:01,900  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:07:35,453  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:07:35,480  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:08:12,014  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:08:12,040  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:09:42,560  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:09:42,599  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:11:48,601  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:11:48,623  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:12:18,848  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:12:18,878  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:13:52,066  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:13:52,091  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:14:09,750  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:14:09,774  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:14:25,467  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:14:25,495  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:15:10,575  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:15:10,602  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:15:50,103  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:15:50,127  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:16:05,188  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:16:05,211  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:16:28,191  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:16:28,227  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:18:12,108  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:18:12,133  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:18:26,150  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:18:26,175  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:19:13,209  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:19:13,250  django.request  WARNING: Not Found: /memacc/jquery.js
+INFO: 2021-05-26 19:19:44,170  dev  INFO: Main page was invited
+INFO: 2021-05-26 19:19:44,223  django.request  WARNING: Not Found: /memacc/jquery.js
