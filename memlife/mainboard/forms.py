@@ -4,6 +4,9 @@ from django.core.files.base import ContentFile
 from django.utils.text import slugify
 from .models import Mem
 
+class MemForm():
+    pass
+
 class MemCreateForm(forms.ModelForm):
     class Meta:
         model = Mem

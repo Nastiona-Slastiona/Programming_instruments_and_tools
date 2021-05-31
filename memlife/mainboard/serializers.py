@@ -4,4 +4,4 @@ from .models import Mem
 class MemSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Mem
-        fields = ('id','title', 'url','description')
+        fields = ('user_id','title', 'url','description')

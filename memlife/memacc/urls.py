@@ -34,5 +34,4 @@ urlpatterns = [
     path('edit/', edit, name='edit'),
     path('register/', register, name='register'),
     path('api/', include(router.urls)),
-    #path('accounts/', include('allauth.urls'), name='socialaccount_connections'),
 ]

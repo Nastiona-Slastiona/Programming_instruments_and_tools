@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% block title %}Dashboard{% endblock %}
@@ -5,7 +6,7 @@
 {% block content %}
     <h1>Dashboard</h1>
     {% with total_mems_created=request.user.mems_created.count %}
-    <p>Welcome to your dashboard. You have bookmarked {{ total_mems_created }} mem{{ total_mems_created|pluralize }}.</p>
+    <p>Welcome to your dashboard. You have bookmarked {{ total_mems_created }} mems{{ total_mems_created|pluralize }}.</p>
     {% endwith %}
     
     <p>Drag the following button to your bookmarks toolbar to bookmark mems from other websites → 

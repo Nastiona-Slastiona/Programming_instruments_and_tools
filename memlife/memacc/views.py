@@ -6,6 +6,7 @@ from .forms import LoginForm, UserRegistrationForm, UserEditForm, ProfileEditFor
 from django.contrib.auth.models import User
 from django.contrib import messages
 from rest_framework import viewsets
+from django.contrib.auth.models import Permission
 from .serializers import ProfileSerializer
 from .models import Profile
 from .acc_logger import logger
@@ -59,8 +60,13 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    logger.info(f"{user.get_username()} have entered into MeMes")
-                    return render(request, 'memacc/dashboard.html', {'form': form})
+                    if hasattr(user,'profile'):
+                        logger.info(f"{user.get_username()} have entered into MeMes")
+                        return render(request, 'memacc/dashboard.html', {'form': form})
+                    else:
+                        Profile.objects.create(user=user)  
+                        return render(request, 'memacc/dashboard.html', {'form': form})
+                        
                 else:
                     logger.error(f"During the enterance error ocured")
                     messages.error(request, 'Disabled account')

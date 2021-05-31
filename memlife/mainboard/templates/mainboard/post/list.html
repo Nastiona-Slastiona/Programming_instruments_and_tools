@@ -7,7 +7,9 @@
                         font-style: initial;"> 
                 {{ mem.title }}
             </h2>
-            <img src="{{mem.url}}" width=default height="300" style="border-style: dotted;border-width: inherit;">
+            <a href="{{mem.url}}" class="ulightbox" target="_blank">
+            <img src="{{mem.url}}" width="400" height="400" style="border-style: dotted;border-width: inherit;">
+            </a>
             <p class="date">
                 {% if user.is_authenticated%}
                 Published {{ mem.publish }} by {{ mem.user }}

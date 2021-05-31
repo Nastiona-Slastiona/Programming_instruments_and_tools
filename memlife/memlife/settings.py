@@ -12,6 +12,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-^7k)7j+6d9kq-pt93bh$b6dd+67m7*#)cq)gk7pwew6o(k=^29'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAdminUser',
+    )
+}
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -21,8 +26,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'memacc',
-    'mainboard',
+    'memacc.apps.MemaccConfig',
+    'mainboard.apps.MainboardConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -96,8 +101,11 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'dnon2cTKr8HQM8FFPHhHZWHo'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-ACCOUNT_EMAIL_VERIFICATION = True
 ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_AUTHENTICATION_METHOD = 'password'
+SOCIALACCOUNT_AUTO_SIGNUP = False
+# ACCOUNT_EMAIL_VERIFICATION = True
+# ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = None
 
 SOCIALACCOUNT_PROVIDERS = {
     'google': {
@@ -121,6 +129,9 @@ DATABASES = {
         'PASSWORD': 'mempr_password',
         'HOST': 'localhost',
         'PORT': '',
+        'TEST': {
+            'NAME': 'test_mempr_base_'
+        },
     }
 }
 
@@ -164,10 +175,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
-LOGIN_REDIRECT_URL = reverse_lazy('dashboard') #ссылка после входа
+LOGIN_REDIRECT_URL = reverse_lazy('account_set_password') #ссылка после входа
 LOGIN_URL = reverse_lazy('login') #  ссылка для входа
 LOGOUT_URL = reverse_lazy('logout') # ссылка после выхода
-
+# ACCOUNT_FORMS = {'set_password': 'memacc.forms.SetPasswordForm' }
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media/')

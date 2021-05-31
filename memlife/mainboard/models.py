@@ -12,7 +12,7 @@ class Mem(models.Model):
     user = models.ForeignKey(User, 
             related_name='mems_created',
             on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=200, db_index=True)
     slug = models.SlugField(max_length=200, blank=True,  unique_for_date='publish' )
     url = models.URLField()
     mem = models.ImageField(upload_to='mems/%Y/%m/%d')
