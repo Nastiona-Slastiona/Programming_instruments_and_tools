@@ -1,0 +1,63 @@
+FROM python:3.8.3-alpine
+# set work directory
+WORKDIR /usr/src/memlife
+# set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+RUN pip install --upgrade pip
+# install dependencies
+RUN apk update && apk add libpq
+RUN pip install djangorestframework 
+RUN apk update \
+    && apk add postgresql-dev gcc python3-dev musl-dev \
+    && apk add libffi-dev libressl-dev \
+    && apk add --no-cache jpeg-dev zlib-dev libjpeg \
+    && apk add rust cargo 
+RUN pip install cryptography
+RUN pip install django-allauth
+RUN pip install markdown 
+RUN pip install django-filter
+
+RUN apk update \
+    && apk add --virtual build-deps gcc python3-dev musl-dev \
+    && apk add postgresql \
+    && apk add postgresql-dev \
+    && pip install psycopg2 \
+    && apk add jpeg-dev zlib-dev libjpeg \
+    && pip install Pillow \
+    && apk del build-deps
+
+
+RUN pip install PyYAML
+
+# install dependencies
+COPY ./requirements.txt .
+RUN pip install -r requirements.txt
+#########
+# FINAL #
+#########
+# create directory for the app user
+RUN mkdir -p /home/project
+# create the app user
+RUN addgroup -S project && adduser -S project -G project
+# create the appropriate directories
+ENV HOME=/home/project
+ENV APP_HOME=/home/project/web
+RUN mkdir $APP_HOME
+RUN mkdir $APP_HOME/staticfiles
+RUN mkdir $APP_HOME/static_dev
+RUN mkdir $APP_HOME/mediafiles
+RUN mkdir $APP_HOME/media_dev
+WORKDIR $APP_HOME
+# copy entrypoint-prod.sh
+COPY ./entrypoint.prod.sh $APP_HOME
+# copy project
+COPY . $APP_HOME
+# chown all the files to the app user
+RUN chown -R project:project $APP_HOME
+# change to the app user
+USER project
+# run entrypoint.prod.sh
+#RUN chmod +x /usr/src/memlife/entrypoint.sh
+#ENTRYPOINT ["/usr/src/memlife/entrypoint.sh"]
+#ENTRYPOINT ["/usr/src/memlife/entrypoint.prod.sh"]
