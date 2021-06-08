@@ -17,12 +17,10 @@ class MemCreateForm(forms.ModelForm):
     def save(self, force_insert=False, 
             force_update=False, commit=True):
         mem = super(MemCreateForm, self).save(commit=False)
-        
         mem_url = self.cleaned_data['url']
         mem_name = '{}.{}'.format(slugify(mem.title), 
                     mem_url.rsplit('.', 1)[1].lower())
         response = request.urlopen(mem_url)
-
         mem.mem.save(mem_name, ContentFile(response.read()), 
                     save=False)
         if commit:

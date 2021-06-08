@@ -181,7 +181,7 @@ STATICFILES_DIRS = [
 LOGIN_REDIRECT_URL = reverse_lazy('login') #ссылка после входа
 LOGIN_URL = reverse_lazy('login') #  ссылка для входа
 LOGOUT_URL = reverse_lazy('logout') # ссылка после выхода
-# ACCOUNT_FORMS = {'account/social/signup': 'register' }
+ACCOUNT_FORMS = {'login': 'register' }
 
 MEDIA_URL = '/mediafiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'mediafiles/')

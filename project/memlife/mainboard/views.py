@@ -18,14 +18,11 @@ def mem_create(request):
     if request.method == 'POST':
         form = MemCreateForm(data=request.POST)
         if form.is_valid():
-            #form.save()
             cd = form.cleaned_data
             new_item = form.save(commit=False)
             new_item.user = request.user
             new_item.save()
             messages.success(request, 'Mem added successfully')
-            # if cd['mem']:
-            #return render(request,'mainboard/mem/create.html',{'form': form})
     else:
         form = MemCreateForm(data=request.GET)
     return render(request, 'mainboard/mem/create.html', {'section': 'mems', 'form': form})

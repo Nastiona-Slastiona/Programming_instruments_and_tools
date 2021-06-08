@@ -3137,3 +3137,109 @@ Traceback (most recent call last):
     new_item.mem = form.instance()
 TypeError: 'Mem' object is not callable
 INFO: 2021-06-07 14:48:08,178  django.utils.autoreload  INFO: /usr/src/memlife/mainboard/views.py changed, reloading.
+INFO: 2021-06-07 15:05:54,610  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:05:58,956  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:06:04,248  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:06:34,776  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:06:40,203  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:07:31,886  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:00,279  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:18,141  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:25,606  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:28,861  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:32,086  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:36,485  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:38,761  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:43,215  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:45,441  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:08:50,045  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:09:04,885  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:10:53,347  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:11:09,500  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:11:18,008  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:11:28,593  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:11:38,191  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:11:54,102  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:12:16,602  dev  INFO: Main page was invited
+INFO: 2021-06-07 15:12:28,109  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:12:45,113  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:13:05,415  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:13:10,878  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:13:24,716  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:13:30,012  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:13:54,038  dev  INFO: Nastiona Trying to enter
+INFO: 2021-06-07 15:13:54,234  dev  INFO: Nastiona have entered into MeMes
+INFO: 2021-06-07 15:14:27,085  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:14:31,419  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:14:44,386  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:14:49,706  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:15:37,136  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:15:43,557  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:15:46,823  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:15:53,427  django.request  ERROR: Internal Server Error: /accounts/google/login/callback/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 77, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/allauth/socialaccount/providers/oauth2/views.py", line 147, in dispatch
+    return complete_social_login(request, login)
+  File "/usr/local/lib/python3.8/site-packages/allauth/socialaccount/helpers.py", line 151, in complete_social_login
+    return _complete_social_login(request, sociallogin)
+  File "/usr/local/lib/python3.8/site-packages/allauth/socialaccount/helpers.py", line 166, in _complete_social_login
+    ret = _login_social_account(request, sociallogin)
+  File "/usr/local/lib/python3.8/site-packages/allauth/socialaccount/helpers.py", line 48, in _login_social_account
+    return perform_login(
+  File "/usr/local/lib/python3.8/site-packages/allauth/account/utils.py", line 180, in perform_login
+    get_login_redirect_url(request, redirect_url, signup=signup)
+  File "/usr/local/lib/python3.8/site-packages/allauth/account/utils.py", line 62, in get_login_redirect_url
+    ret = get_adapter(request).get_login_redirect_url(request)
+  File "/usr/local/lib/python3.8/site-packages/allauth/account/adapter.py", line 157, in get_login_redirect_url
+    return resolve_url(url)
+  File "/usr/local/lib/python3.8/site-packages/django/shortcuts.py", line 122, in resolve_url
+    to = str(to)
+  File "/usr/local/lib/python3.8/site-packages/django/utils/functional.py", line 140, in __text_cast
+    return func(*self.__args, **self.__kw)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/usr/local/lib/python3.8/site-packages/django/urls/resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'memacc/dashboard.html' not found. 'memacc/dashboard.html' is not a valid view function or pattern name.
+INFO: 2021-06-07 15:16:50,246  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:16:53,530  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:17:08,494  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:17:11,824  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:17:39,447  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:18:38,647  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:18:58,835  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:19:19,000  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:19:37,043  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:26:15,358  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:26:21,724  django.utils.autoreload  INFO: /usr/src/memlife/memlife/settings.py changed, reloading.
+INFO: 2021-06-07 15:28:40,707  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:28:50,248  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:25,750  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:35,261  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:41,668  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:44,952  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:49,351  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:51,574  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:31:56,927  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:33:06,627  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:33:45,908  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:34:12,059  dev  INFO: Main page was invited
+INFO: 2021-06-07 15:34:23,308  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:34:26,561  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:08,617  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:11,927  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:19,402  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:23,734  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:30,104  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:35:47,001  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:36:06,030  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:36:18,111  dev  INFO: Main page was invited
+INFO: 2021-06-07 15:36:28,191  django.utils.autoreload  INFO: /usr/src/memlife/memacc/views.py changed, reloading.
+INFO: 2021-06-07 15:36:40,800  django.utils.autoreload  INFO: /usr/src/memlife/mainboard/views.py changed, reloading.
+INFO: 2021-06-07 15:41:51,297  dev  INFO: Main page was invited

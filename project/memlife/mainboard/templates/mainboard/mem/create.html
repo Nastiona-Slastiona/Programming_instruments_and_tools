@@ -4,11 +4,6 @@
 
 {% block content %}
     <h1>Bookmark a mem</h1>
-    {% comment %} <form action="." method="post", enctype="multipart/form-data">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="submit" value="Bookmark it!">
-    </form> {% endcomment %}
     <img src="{{ request.GET.url }}" class="image-preview">
     <form action="." method="post">
         {{ form.as_p }}

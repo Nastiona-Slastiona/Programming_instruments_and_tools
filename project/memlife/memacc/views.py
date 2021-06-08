@@ -18,6 +18,7 @@ class ProfileViewSet(viewsets.ModelViewSet):
 
 @login_required
 def dashboard(request):
+    user = request.user
     logger.info("Main page was invited")
     return render(request, 
                     'memacc/dashboard.html',

@@ -33,13 +33,6 @@ class Mem(models.Model):
         if not self.slug:
             self.slug = slugify(self.title)
             super(Mem, self).save(*args, **kwargs)
-            
-    def get_absolute_url(self):
-        return reverse('post_detail',
-                        args=[self.publish.year,
-                            self.publish.strftime('%m'),
-                            self.publish.strftime('%d'),
-                            self.slug])
 
 class Meta:
     ordering = ('-publish',)
