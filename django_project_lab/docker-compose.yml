@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   web:
-    image: project_mem:memlife
+    image: nastiona00slastiona/project_mem:memlife
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
       - ./memlife/:/usr/src/memlife/
