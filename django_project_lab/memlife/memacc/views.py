@@ -10,6 +10,7 @@ from django.contrib.auth.models import Permission
 from .serializers import ProfileSerializer
 from .models import Profile
 from .acc_logger import logger
+from .action import SendToEmail
 
 
 class ProfileViewSet(viewsets.ModelViewSet):
@@ -26,11 +27,13 @@ def dashboard(request):
 
 @login_required
 def edit(request):
+    
     if request.method == 'POST':
         user_form = UserEditForm(instance=request.user, data=request.POST)
         profile_form = ProfileEditForm(instance=request.user.profile, 
                                     data=request.POST, 
                                     files=request.FILES)
+
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
@@ -40,6 +43,7 @@ def edit(request):
             logger.error(f"{user_form.cleaned_data['first_name']}'s profile wasn't edited")
             messages.error(request, 'Error updating your profile')
     else:
+
         if request.user is not None and hasattr(request.user,'profile'):
             profile_form = ProfileEditForm(instance=request.user.profile)
         else:
@@ -54,20 +58,23 @@ def edit(request):
 def user_login(request):
     if request.method == 'POST':
         form = LoginForm(request.POST)
+
         if form.is_valid():
             cd = form.cleaned_data
             logger.info('{} Trying to enter'.format(cd['username']))
             user = authenticate(username=cd['username'], password=cd['password'])
+
             if user is not None:
+
                 if user.is_active:
                     login(request, user)
+
                     if hasattr(user,'profile'):
                         logger.info(f"{user.get_username()} have entered into MeMes")
-                        return render(request, 'memacc/dashboard.html', {'form': form})
                     else:
                         Profile.objects.create(user=user)  
-                        return render(request, 'memacc/dashboard.html', {'form': form})
-                        
+                    SendToEmail(user.email, user.username)
+                    return render(request, 'memacc/dashboard.html', {'form': form})
                 else:
                     logger.error(f"During the enterance error ocured")
                     messages.error(request, 'Disabled account')
@@ -76,6 +83,7 @@ def user_login(request):
                 messages.error(request, 'Invalid Username')
     else:
         form = LoginForm()
+
     return render(request, 'memacc/login.html', {'form': form})
 
 def register(request):
@@ -89,6 +97,7 @@ def register(request):
             Profile.objects.create(user=new_user)
             return render(request, 'memacc/register_done.html', {'new_user': new_user})
     else:
+
         if request.user.is_authenticated:
             return render(request, 'set_password')
         user_form = UserRegistrationForm()
