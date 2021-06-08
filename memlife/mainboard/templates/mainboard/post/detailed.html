@@ -1,9 +1,0 @@
-{% extends "base.html" %}
-{% block title %}{{ mem.title }}{% endblock %}
-{% block content %}
-    <h1>{{ mem.title }}</h1>
-    <p class="date">
-        Published {{ mem.publish }} by {{ mem.user }}
-    </p>
-{{ post.body|linebreaks }}
-{% endblock %}
