@@ -6,9 +6,6 @@ from django.urls import reverse_lazy
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY") or "super-secret-key"
 
@@ -17,13 +14,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAdminUser',
     )
 }
-# SECURITY WARNING: don't run with debug turned on in production!
+
 #DEBUG = True
 DEBUG = int(os.environ.get("DEBUG", default=0))
 
 
 ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "*").split(" ")
-
 
 # Application definition
 
@@ -171,8 +167,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = 'static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
     '/var/www/static/',
@@ -183,8 +178,8 @@ LOGIN_URL = reverse_lazy('login') #  ссылка для входа
 LOGOUT_URL = reverse_lazy('logout') # ссылка после выхода
 ACCOUNT_FORMS = {'login': 'register' }
 
-MEDIA_URL = '/mediafiles/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'mediafiles/')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

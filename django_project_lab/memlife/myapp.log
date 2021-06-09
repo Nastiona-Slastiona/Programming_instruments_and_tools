@@ -3349,3 +3349,5 @@ LINE 1: ...ession_data", "django_session"."expire_date" FROM "django_se...
                                                              ^
 
 INFO: 2021-06-08 22:53:46,094  django.request  WARNING: Not Found: /favicon.ico
+INFO: 2021-06-09 09:03:01,392  django.request  WARNING: Not Found: /favicon.ico
+INFO: 2021-06-09 09:15:00,941  dev  INFO: Main page was invited
