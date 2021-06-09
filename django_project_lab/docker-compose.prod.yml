@@ -1,7 +1,6 @@
 version: '3.7'
 services:
     web:
-        build: ./memlife
         image: nastiona00slastiona/project_mem_prod:memlife_prod_1
         command: gunicorn hello_django.wsgi:memlife --bind 0.0.0.0:8000
         expose:
@@ -17,7 +16,7 @@ services:
         env_file:
         - ./.env.prod.db
     nginx:
-        build: ./nginx
+        image: nastiona00slastiona/project_mem_nginx:v1
         ports:
             - 1337:80
         depends_on:
