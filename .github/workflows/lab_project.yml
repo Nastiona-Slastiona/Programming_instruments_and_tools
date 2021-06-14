@@ -20,7 +20,7 @@ jobs:
           docker build ./django_project_lab/nginx -t nastiona00slastiona/project_mem_nginx:latest -f ./django_project_lab/nginx/Dockerfile
           docker-compose -f ./django_project_lab/docker-compose.prod.yml up -d
           docker ps -a
-          docker exec web python -m pytest
+          docker-compose exec web python -m pytest
           docker-compose -f ./django_project_lab/docker-compose.prod.yml down
           
       - name: docker login
