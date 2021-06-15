@@ -1,6 +1,5 @@
-from abc import abstractmethod
 import inspect
-import functools
+
 
 class ModelCreator(type):
     def __new__(cls, *args):

@@ -23,10 +23,10 @@ class Defaultdict(dict):
  
     def __str__(self):
         keys = list(self.keys())
-        valuse = list(self.values())
+        values = list(self.values())
         stroka = ''
         for i in range(len(keys)):
-            stroka += '{}'.format(keys[i]) + ': ' + '{}'.format(valuse[i]) + ', '
+            stroka += '{}'.format(keys[i]) + ': ' + '{}'.format(values[i]) + ', '
         return '{'+ stroka + '}'
     
   

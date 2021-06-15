@@ -1,6 +1,4 @@
 from functools import wraps
-
-from functools import wraps
 import time
 
 
@@ -14,7 +12,7 @@ class RecursiveDict(dict):
             return value
 
 def cached(func):
-    saved=RecursiveDict()
+    saved = RecursiveDict()
 
     @wraps(func)
     def newfunc(*args, **kwargs):

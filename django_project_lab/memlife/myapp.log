@@ -3436,3 +3436,9 @@ INFO: 2021-06-10 12:26:59,134  dev  ERROR: During the enterance error ocured
 INFO: 2021-06-10 12:26:59,154  dev  INFO: 1_user Trying to enter
 INFO: 2021-06-10 12:26:59,157  dev  ERROR: During the enterance error ocured
 INFO: 2021-06-10 13:23:11,183  dev  INFO: Main page was invited
+INFO: 2021-06-14 13:05:02,608  django.request  WARNING: Not Found: /favicon.ico
+INFO: 2021-06-14 13:05:12,198  dev  INFO: Nastiona Trying to enter
+INFO: 2021-06-14 13:05:12,206  dev  ERROR: During the enterance error ocured
+INFO: 2021-06-14 13:05:40,089  dev  INFO: Main page was invited
+INFO: 2021-06-14 13:30:53,521  django.request  WARNING: Forbidden: /mainboard/api/
+INFO: 2021-06-14 13:31:02,152  django.request  WARNING: Forbidden: /mainboard/api/

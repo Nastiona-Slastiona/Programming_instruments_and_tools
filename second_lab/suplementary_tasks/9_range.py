@@ -13,7 +13,7 @@ def custom_range(start, stop=None, step=1):
             result.append(i)
             i += step 
     else:
-        while i > stop :
+        while i > stop:
             result.append(i)
             i += step
     return result
