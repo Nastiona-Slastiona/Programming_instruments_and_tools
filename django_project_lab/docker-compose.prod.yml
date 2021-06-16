@@ -1,6 +1,7 @@
 version: '3.7'
 services:
     web:
+        container_name: django_project_web
         image: nastiona00slastiona/project_mem_prod:latest
         command: gunicorn memlife.wsgi:application --bind 0.0.0.0:8000 --reload
         volumes:
