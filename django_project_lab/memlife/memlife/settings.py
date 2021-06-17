@@ -171,13 +171,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
-    '/var/www/static/',
 ]
+STATIC_ROOT = os.environ.get("STATIC_ROOT")
+
 
 LOGIN_REDIRECT_URL = reverse_lazy('login') #ссылка после входа
 LOGIN_URL = reverse_lazy('login') #  ссылка для входа
 LOGOUT_URL = reverse_lazy('logout') # ссылка после выхода
-ACCOUNT_FORMS = {'login': 'register' }
+# ACCOUNT_FORMS = {'login': 'register' }
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media/')
